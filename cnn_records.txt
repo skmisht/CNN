@@ -16,4 +16,4 @@ Input:
 Output: 
 Training-Validation: 76 Training-Test: 67 Validation-Test: 65
 
-[Explanation Link](https://stats.stackexchange.com/questions/220378/consequences-of-overlap-between-training-validation-and-test-data)
+Explanation Link: https://stats.stackexchange.com/questions/220378/consequences-of-overlap-between-training-validation-and-test-data
