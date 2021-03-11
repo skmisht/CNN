@@ -1,1 +1,17 @@
-# to records all the related works for each framework.
+Records all the related works for each framework.
+
+----------------------------------------------------- CNN - PyTorch -----------------------------------------------
+Issue #1. Overlap between image (images that are sharing the same parameters)
+
+Input: 
+  train_validation = [x for x in validation_images if x in train_images]
+  train_test = [x for x in test_images if x in train_images]
+  validation_test =  [x for x in test_images if x in validation_images]
+  # if len > 0 means overlap
+  if (len(train_validation) > 0 or len(train_test) > 0 or len(validation) > 0):
+    print("Training-Validation:",len(train_validation), "Training-Test:",len(train_test), "Validation-Test:",len(validation_test))
+  else:
+    print("No, there is no overlap!")
+
+Output: 
+Training-Validation: 76 Training-Test: 67 Validation-Test: 65
